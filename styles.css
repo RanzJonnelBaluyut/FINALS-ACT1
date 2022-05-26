@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1495745713439-7efd16a9555c?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1587);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    color: #000;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.header{
+    text-align: center;  
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
+}
+
+.card{
+    width: 40%;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    line-height: 30px;
+    color: #ffff;
+    background-color: #444444; 
+    box-shadow: 10px 10px 5px #D9D9D9;   
+}
+
+.phoneMail{
+    line-height: 2px;
+}
+
+.profileName::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: 120px;
+    background-color: #DA0037;
+    left: 31%;
+    transition: all 0.4s ease-in-out;
+}
+
+.card{
+    outline:auto;
+    outline-offset: 3px;
+    outline-color:#171717;
+}
+
+.card:hover .profileName::after{
+	width: 25%;
+}
+
+.profilePic{
+    margin-top: -70px;
+    margin-right: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    float: right;
+    outline: auto;
+}
+
+.box:hover{ 
+    outline: none;
+    transform: translate(-30px, -30px);
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    outline:auto;
+    outline-offset: 3px;
+    outline-color: #DA0037;
+    background-color: #171717;
+    color: #ffff;
+}
+
+/* Animation Ideas Source https://freefrontend.com/css-hover-effects/ */
